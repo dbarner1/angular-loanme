@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div customerWrapper>
+  <div class="loanList">
+    <h2>Outstanding Loans</h2>
+    <a *ngFor="let loan of loans"
+        routerLink="/loans/{{loan.id}}">
+      <div>
+        <span>{{loan.id}}</span>
+        <span>{{loan.name}}</span>
+        <span>{{loan.price}}</span>
+      </div>
+    </a>
+  </div>
+</div>

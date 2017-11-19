@@ -1,0 +1,36 @@
+<div class="dashboardWrapper">
+  <app-header></app-header>
+
+<div class="ModulesWrapper">
+    <div class="module">
+      <h2>Outstanding Loans</h2>
+      <div class="loanList">
+
+        <table>
+          <tr>
+            <th>Loan ID</th>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+          <tr *ngFor="let loan of loans">
+              <td><a routerLink="/loans/{{loan.id}}">{{loan.id}}</a></td>
+              <td>{{loan.name}}</td>
+              <td>{{loan.price}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="module">
+      <h2>My Customers</h2>
+      <div class="loanList">
+        <a *ngFor="let loan of loans"
+            routerLink="/customer/{{loan.customer_name}}">
+          <div>
+            <span>{{loan.customer_name}}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

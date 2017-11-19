@@ -1,0 +1,50 @@
+.actions {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+.actionButton {
+  width: 200px;
+  height: 100px;
+  align-self: center;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(47,164,152,1);
+}
+
+.actionButton:hover {
+  box-shadow: 2px 5px 5px grey;
+}
+
+.totalAmount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.totalAmountNumber {
+  background-color: white;
+  font-size: 40px;
+  width: 300px;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.loansModule {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.greeting {
+  margin-top: 8vh;
+}

@@ -1,0 +1,13 @@
+.customerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.loanList {
+  margin: 0 auto;
+  margin-top: 10vw;
+  background-color: white;
+  width: 30vw;
+}

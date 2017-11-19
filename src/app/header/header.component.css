@@ -1,0 +1,38 @@
+img {
+  width: 100px;
+  height: 80px;
+  margin-right: 40vw;
+  margin-left: 10vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background-color: rgba(47,164,152,1);
+  padding: 1vw;
+  box-shadow: 1px 2px 3px grey;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+li {
+  display: inline;
+  width: 20vw;
+  font-size: 20px;
+  margin-right: 20px;
+  color: white;
+}

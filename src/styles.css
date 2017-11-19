@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/imgs/zebra.png');
+  background-repeat: repeat;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.globalWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+.globalButtonGreenBig {
+  width: 250px;
+  height: 100px;
+  align-self: center;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(47,164,152,1);
+}
+
+.globalSecondaryButton {
+  align-self: center;
+  background-color: none;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgba(47,164,152,1);
+  margin-top: 10px;
+}
+
+.globalButtonGreenBig:hover {
+  box-shadow: 2px 5px 5px grey;
+}
+
+.globalSecondaryButton:hover {
+ font-size: 22px;
+}
