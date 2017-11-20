@@ -11,3 +11,26 @@
   background-color: white;
   width: 30vw;
 }
+
+.module {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.loanList {
+  margin-top: 4vh;
+}
+
+td {
+  width: 150px;
+  background: white;
+}
+
+th {
+  width: 150px;
+  background: grey;
+  color: white;
+}

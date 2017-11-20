@@ -12,3 +12,7 @@ export const LOANS: Loan[] = [
   { id: 19, name: 'Car', customer_name: "Smithers Simpson", price:"$39.58" },
   { id: 20, name: 'Mortage', customer_name: "Tesla Tonesta", price:"$393.85"  }
 ];
+
+export const LOAN: Loan[] = [
+  { id: 12, name: 'Student', customer_name: "Mike Jordan", price:"$303.94" }
+];

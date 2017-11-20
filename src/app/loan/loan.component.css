@@ -1,0 +1,22 @@
+.module {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.loanList {
+  margin-top: 4vh;
+}
+
+td {
+  width: 100px;
+  background: white;
+}
+
+th {
+  width: 100px;
+  background: grey;
+  color: white;
+}

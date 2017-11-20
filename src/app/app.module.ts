@@ -11,6 +11,7 @@ import { LoanComponent } from './loan/loan.component';
 import { ManageComponent } from './manage/manage.component';
 import { HeaderComponent } from './header/header.component';
 import { CustomerComponent } from './customer/customer.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CustomerComponent } from './customer/customer.component';
     LoanComponent,
     ManageComponent,
     HeaderComponent,
-    CustomerComponent
+    CustomerComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,

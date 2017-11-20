@@ -9,6 +9,7 @@ import { loanService } from '../loan.service';
 })
 
 export class CustomerComponent implements OnInit {
+  loans: Loans[] = [];
 
   constructor(private loanService: loanService) { }
 

@@ -4,7 +4,8 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 import { HomeComponent }        from './home/home.component';
 import { LoanComponent }        from './loan/loan.component';
 import { ManageComponent }      from './manage/manage.component';
-import { CustomerComponent }     from './customer/customer.component';
+import { CustomerComponent }    from './customer/customer.component';
+import { HelpComponent }        from './help/help.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/join', pathMatch: 'full' },
@@ -13,7 +14,7 @@ const routes: Routes = [
   { path: 'customer/:id', component: CustomerComponent },
   { path: 'loans', pathMatch: 'full', component: ManageComponent },
   { path: 'loans/:id', component: LoanComponent },
-
+  { path: 'help', component: HelpComponent },
 ];
 
 @NgModule({

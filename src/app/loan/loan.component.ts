@@ -9,17 +9,16 @@ import { loanService } from '../loan.service';
 })
 
 export class LoanComponent implements OnInit {
-  loans: Loan[] = [];
+  loan: Loan[] = [];
 
 constructor(private loanService: loanService) { }
-
   ngOnInit() {
-    this.getLoans();
+    this.getLoan();
   }
 
-  getLoans(): void {
-    this.loanService.getLoans()
-    .subscribe(loans => this.loans = loans.slice(1, 5));
+  getLoan(): void {
+    this.loanService.getLoan()
+    .subscribe(loan => this.loan = loan);
   }
 
 }

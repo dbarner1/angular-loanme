@@ -2,13 +2,19 @@
 <div customerWrapper>
   <div class="loanList">
     <h2>Outstanding Loans</h2>
-    <a *ngFor="let loan of loans"
-        routerLink="/loans/{{loan.id}}">
-      <div>
-        <span>{{loan.id}}</span>
-        <span>{{loan.name}}</span>
-        <span>{{loan.price}}</span>
-      </div>
-    </a>
+    <table>
+      <tr>
+        <th>Loan ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Edit</th>
+      </tr>
+      <tr *ngFor="let loan of loans">
+          <td><a routerLink="/loans/{{loan.id}}">{{loan.id}}</a></td>
+          <td>{{loan.name}}</td>
+          <td>{{loan.price}}</td>
+          <td>Edit (disabled)</td>
+      </tr>
+    </table>
   </div>
 </div>
