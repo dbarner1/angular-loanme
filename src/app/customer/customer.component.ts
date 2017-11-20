@@ -9,7 +9,7 @@ import { loanService } from '../loan.service';
 })
 
 export class CustomerComponent implements OnInit {
-  loans: Loans[] = [];
+  loans: Loan[] = [];
 
   constructor(private loanService: loanService) { }
 
@@ -19,7 +19,7 @@ export class CustomerComponent implements OnInit {
 
   getLoans(): void {
     this.loanService.getLoans()
-      .subscribe(loans => this.loans = loans.slice(1, 5));
+      .subscribe(loans => this.loans = loans);
   }
 
 }
